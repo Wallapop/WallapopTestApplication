@@ -44,6 +44,7 @@ project.afterEvaluate {
         executionData = files("${project.buildDir}/jacoco/${testTaskName}.exec")
 
         reports {
+          xml.destination = "${project.buildDir}/reports/jacoco/jacocoTestReport.xml"
           xml.enabled = true
           html.enabled = true
         }

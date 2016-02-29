@@ -9,6 +9,7 @@ import android.view.View;
 import android.view.Menu;
 import android.view.MenuItem;
 import android.widget.TextView;
+import com.wallapop.library.test.TextLibraryTest;
 
 public class MainActivity extends AppCompatActivity {
 
@@ -29,7 +30,8 @@ public class MainActivity extends AppCompatActivity {
       }
     });
 
-    ((TextView) findViewById(R.id.textview)).setText(TextBuilder.getText(1));
+    ((TextView) findViewById(R.id.textview)).setText(TextBuilder.getText(1) + TextLibraryTest.get(0));
+
   }
 
   @Override

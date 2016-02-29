@@ -23,8 +23,14 @@ android {
   }
 }
 
+coveralls{
+  sourceDirs = ["app/main/java"]
+  jacocoReportPath = "${project.buildDir}/reports/jacoco/jacocoTestReport.xml"
+}
+
 dependencies {
   compile fileTree(dir: 'libs', include: ['*.jar'])
+  compile project(":wallapoptestlibrary")
   testCompile 'junit:junit:4.12'
   compile 'com.android.support:appcompat-v7:23.2.0'
   compile 'com.android.support:design:23.2.0'
