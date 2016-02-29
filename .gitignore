@@ -33,3 +33,5 @@ captures/
 
 #ingore idea files
 .idea/*
+
+*.iml
