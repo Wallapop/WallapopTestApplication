@@ -30,3 +30,6 @@ proguard/
 
 # Android Studio captures folder
 captures/
+
+#ingore idea files
+.idea/*
